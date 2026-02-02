@@ -1,0 +1,184 @@
+@audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --bg: #0b1215;
+  --surface: #111a1f;
+  --surface-alt: #0f161a;
+  --accent: #5cffcc;
+  --accent-soft: rgba(92, 255, 204, 0.25);
+  --text: #dff6ee;
+  --muted: #a9c7be;
+  --link: #7fe8ff;
+}
+
+body {
+  margin: 0%;
+  background-color: var(--bg);
+  color: var(--text);
+  }
+
+/****************   Nav Section **********************/
+nav {
+	background-color: var(--surface);
+  border-color: var(--accent-soft);
+  justify-content: space-between;
+  text-decoration: none;
+  display: flex;
+  color: var(--accent);
+}
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+  padding: 15px;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+	background-color: var(--surface);
+  border-color: var(--accent-soft);
+  justify-content: center;
+  text-decoration: none;
+  display: flex;
+  color: var(--accent);
+}
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+  padding: 15px;
+}
+
+/*********** Splash Page ************************/
+header {
+  align-content: space-around;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--surface-alt);
+}
+
+header h1 {
+  font-family: "Audiowide", sans-serif;
+  color: var(--accent);
+}
+
+header img {
+  border-inline: 3px solid var(--accent);
+  border-top: 3px solid var(--accent);
+  border-bottom: 3px solid var(--accent);
+  border-radius: 99%;
+}
+
+.address {
+ font-style: italic;
+  color: var(--muted);
+}
+
+.tagline {
+  font-variant: small-caps;
+  color: var(--accent);
+  text-align: center;
+}
+
+/************* Sections ********************/
+hr {
+  
+}
+
+section h3 {
+  font-family: "Audiowide", sans-serif;
+  color: var(--accent);
+  text-align: center;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+section ul {
+  width: 50%;
+  color: var(--text)
+}
+
+section a {
+  text-decoration: none;
+  color: var(--link);
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px; /* space between cards */
+  margin-top: 12px;
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.card {
+  background: linear-gradient(180deg, #0b1f2a 0%, #0a151b 100%);
+  border: 1px solid var(--accent-soft);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 22px rgba(3, 12, 18, 0.45);
+  text-align: left;
+  color: var(--text);
+}
+
+
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      flex-direction: column; /* vertical nav */
+    align-items: stretch;
+    padding: 0;
+    }
+
+    .three-col {
+      grid-template-columns: 1fr; /* 1 column on mobile */
+    justify-items: center; /* centered cards */
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--accent-soft);
+  border-radius: 8px;
+  background-color: var(--surface-alt);
+  color: var(--text);
+
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 10px 12px;
+  border: 1px solid var(--accent-soft);
+  border-radius: 8px;
+  background-color: var(--surface-alt);
+  color: var(--text);
+}
