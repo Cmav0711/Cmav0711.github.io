@@ -55,9 +55,9 @@ footer {
   text-decoration: none;
   display: flex;
   color: var(--accent);
-}
   position: relative;
   z-index: 1;
+}
 footer a {
   color: var(--accent);
   text-decoration: none;
@@ -70,10 +70,9 @@ header {
   text-align: center;
   padding: 20px;
   background-color: var(--surface-alt);
-}
-
   position: relative;
   z-index: 1;
+}
 header h1 {
   font-family: "Audiowide", sans-serif;
   color: var(--accent);
@@ -218,5 +217,4 @@ textarea {
   z-index: 0;
   opacity: 0.35;
   pointer-events: none;
-}
 }
